@@ -6,6 +6,14 @@
   "private": false,
   "author": "Trent Rand <contact@trentrand.com>",
   "license": "MIT",
+  "homepage": "https://github.com/trentrand/astro-markdown-for-agents#readme",
+  "bugs": {
+    "url": "https://github.com/trentrand/astro-markdown-for-agents/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trentrand/astro-markdown-for-agents.git"
+  },
   "keywords": [
     "astro",
     "integration",

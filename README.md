@@ -1,5 +1,8 @@
 # astro-markdown-for-agents
 
+[![npm version](https://img.shields.io/npm/v/astro-markdown-for-agents.svg)](https://www.npmjs.com/package/astro-markdown-for-agents)
+[![npm downloads](https://img.shields.io/npm/dm/astro-markdown-for-agents.svg)](https://www.npmjs.com/package/astro-markdown-for-agents)
+
 Astro integration that generates markdown variants of your pages for AI agents and supports same-URL markdown negotiation in Astro dev.
 
 ## What it does
