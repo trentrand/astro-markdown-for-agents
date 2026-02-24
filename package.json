@@ -1,0 +1,40 @@
+{
+  "name": "astro-markdown-for-agents",
+  "description": "Astro integration that generates markdown variants of your pages for AI agents",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "author": "Trent Rand <contact@trentrand.com>",
+  "license": "MIT",
+  "keywords": [
+    "astro",
+    "integration",
+    "markdown",
+    "ai",
+    "content-negotiation",
+    "llm"
+  ],
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "astro": "^5.0.0"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./astro": "./src/astro.ts",
+    "./core": "./src/core/index.ts",
+    "./runtime": "./src/runtime.ts"
+  },
+  "dependencies": {
+    "turndown": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/turndown": "^5.0.6"
+  }
+}
