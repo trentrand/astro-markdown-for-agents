@@ -22,8 +22,12 @@
     "content-negotiation",
     "llm"
   ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "bun run build"
+  },
   "files": [
-    "src",
+    "dist",
     "README.md",
     "LICENSE"
   ],
@@ -33,16 +37,37 @@
   "peerDependencies": {
     "astro": "^5.0.0"
   },
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts",
-    "./astro": "./src/astro.ts",
-    "./core": "./src/core/index.ts",
-    "./runtime": "./src/runtime.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./astro": {
+      "types": "./dist/astro.d.ts",
+      "import": "./dist/astro.js",
+      "default": "./dist/astro.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js",
+      "default": "./dist/core/index.js"
+    },
+    "./runtime": {
+      "types": "./dist/runtime.d.ts",
+      "import": "./dist/runtime.js",
+      "default": "./dist/runtime.js"
+    }
   },
   "dependencies": {
     "turndown": "^7.2.0"
   },
   "devDependencies": {
-    "@types/turndown": "^5.0.6"
+    "@types/turndown": "^5.0.6",
+    "@types/node": "^24.3.0",
+    "astro": "^5.0.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
   }
 }
